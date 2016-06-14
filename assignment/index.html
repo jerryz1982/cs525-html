@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Xinyu Zhao">
+<meta name="description"
+      content="PiGuard home page.">
+<meta name="copyright" content="Copyright 2016, Xinyu Zhao">
+<title>PiGuard</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="home">
+<div class='top-navi'>
+<a href="index.html">Home</a>   |
+<a href="about.html">About Us</a>   |
+<a href="contact.html">Contact</a>
+</div>
+<a id="top"><h1>PiGuard</h1></a>
+<p><strong>PiGuard</strong>&#8482; is a home security system using <em>Raspberry Pi</em> with a central management console, which can be hosted in the <strong>cloud</strong> or deployed at your home locally.</p>
+<a href="#intro">Introduction</a>
+<a href="#architecture">Architecture</a>
+<a href="#features">Features</a>
+<hr width=100% size="12" noshade color="#0CCCC">
+<h2><a id="intro">Introduction</a></h2>
+<div>
+<blockquote><strong>Home is where the heart is.</strong><br>
+<blockquote>by Gaius Plinius Secundas - Pliny the Elder</blockquote></blockquote>
+However, with burglaries in the neighborhood, how can you get a peace of mind when you are at work?
+<p>PiGuard&#8482; is an open source solution to battle the problem. It employs the credit card sized Raspberry Pi
+as a smart agent to collect various types of sensor data of your home and reports security events matching
+a crime signature to a central management console, with which you can see what is going on in the home and
+catch the images of the bad guy. It will give you immediate alerts through Email, SMS and social media
+messages such as twitter or facebook. You can take appropiate actions for the event by a click on the console,
+which you can visit at home or everywhere else in the world as long as internet is available.
+</p>
+</div>
+<hr width=100% size="12" noshade color="#0CCCC">
+<h2><a id="architecture">Architecture</a></h2>
+<pre>
+                MEAN Stack
+                      |
+                      |
+                  RabbitMQ
+                  |       |
+                  |       |
+                 R-PI   R-PI
+</pre>
+<p>PiGuard&#8482; includes a swarm of Raspberry Pi-s as agents to collect data from infrared and door switch sensors and report security events
+to RabbitMQ message broker. The central management control console, which employs MEAN(<dfn>MongoDB, Express, AngularJS, NodeJs</dfn>)
+stack, can display and let user handle the reported events with a couple of clicks.</p>
+<hr width=100% size="12" noshade color="#0CCCC">
+<h2><a id="features">Features</a></h2>
+<div id='feature'>
+<p>Motion Detection</p>
+<p>Door Break-in Detection</p>
+<p>Email Notification</p>
+<p>Video/Image Recording</p>
+<p>Push Notification</p>
+<p>Sound Alarm</p>
+</div>
+<a href="#top">Go to Top</a>
+<hr width=100% size="12" noshade color="#0CCCC">
+<div class='foot-navi'>
+&copy;2016 Xinyu Zhao
+<a href="index.html">Home</a>   |
+<a href="about.html">About Us</a>   |
+<a href="contact.html">Contact</a><br>
+<address>2711 N 1st St, San Jose, CA 95134</address>
+</div>
+</body>
+</html>
