@@ -1,0 +1,5 @@
+body {background-color:black; color:yellow}
+#p1 {font-size:0.9em; color:red}
+#p2 {font-size:1.1em; color:yellow}
+#img1 {border:10px ridge red; padding: 30px}
+#img2 {border: 5px double yellow; float:right; margin: 30px 10px 20px 30px}

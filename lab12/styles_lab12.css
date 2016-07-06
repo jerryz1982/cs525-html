@@ -1,0 +1,52 @@
+article {
+  width: 90%;
+  height: 550px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: #6CC0B4;
+  font-family: Arial,sans-serif;
+  font-weight: bolder;
+}
+
+h1 {text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+}
+
+#news {
+  width: 47%;
+  height: 80%;
+  position: relative;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px 5px #2E8681;
+  border-radius: 25px;
+  background: url(images/james1.png) no-repeat top left,
+              url(images/james2.png) no-repeat top right;
+  background-size: contain;
+  color: red;
+}
+.news-style {
+  text-shadow: 1px 1px 2px #999;
+  opacity: 0.7
+}
+#opinion {
+  width: 45%;
+  height: 80%;
+  position: relative;
+  right: 5px;
+  float: right;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px 5px #2E8681;
+  border-radius: 25px;
+  background-image: -moz-linear-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 30px);
+  background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
+  background-color: hsla(182,44%,76%,.5); 
+}
+.opinion-style {
+  color: hsla(230, 69%, 61%, 0.8);
+}
