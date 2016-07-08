@@ -1,10 +1,56 @@
-h1 { background-color:black; color:#E3234F; text-align:center; font-style:oblique}
+header {
+  background-color:black;
+  color:#E3234F;
+  text-align:center;
+  font-style:oblique;
+  border-radius: 15px;
+  margin: 0;
+}
+img#logo { height: 64px; width: 51px }
 h2 { color:white; text-align:left }
+section h2 { color:white; text-align:center }
 .home { background-color:#8BDD98; font-size:1em; font-style:normal; font-family:Arial; font-weight:300; text-align:left }
+nav ul li {
+  list-style-type:none;
+  display: inline;
+  padding: 8px 0 8px 0;
+}
+footer ul li {
+list-style-type:none;
+display: inline;
+padding: 8px 0 8px 0;
+}
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+aside ul li a {
+  display: block;
+  padding: 8px 0 8px 8px;
+}
+article#index-article {
+  float:right;
+  width:90%;
+  padding: 0 10px;
+}
+article {
+  padding: 0 10px 0 10px;
+}
+figure {text-align: center }
+aside {
+  position:fixed;
+  float:left;
+  width:8%;
+}
 .about { background-color:gray; color:white; font-size:1em; font-family:Arial; text-align:right }
+li a:hover {background-color:gray; color:white }
 a:link { background-color:black; color:#E3234F; text-decoration: none }
-a:visited {color:#8BDD98 }
-a:hover { font-weight:bolder; color:green; text-decoration: underline }
+a:visited {color:#0CCCCC }
 #feature { text-align:center }
-.foot-navi { text-align:center; font-size:0.8em }
-.top-navi { text-align:right }
+footer { clear: both; text-align:center; font-size:0.8em }
+nav {
+  text-align:right;
+  padding: 0 10px;
+}
+dt {color:white; font-weight:bold; font-size:1.2em}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Xinyu Zhao">
+<meta name="description"
+      content="Customer Support">
+<meta name="copyright" content="Copyright 2016, Xinyu Zhao">
+<title>PiGuard - Customer Support</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="home">
+<header>
+<h1><img id="logo" src="images/raspberry-pi-logo.png" alt="raspberry logo">
+<a id=top>PiGuard</a></h1>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="new.html">What's New</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="order.html">Order</a></li>
+<li><a href="support.html">Support</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</nav>
+<article>
+<section>
+<h2>Submit a Ticket</h2>
+<form name="ticket" action="http://itu.lewebcafe.com/csc525/form.php" method="post" enctype="application/x-www-form-urlencoded">
+<label for="first_name">First Name:</label>
+<input type="text" name="first_name" id="first_name" maxlength="30">
+<label for="last_name">Last Name:</label>
+<input type="text" name="last_name" id="last_name" maxlength="30">
+<br><br>
+<label for="email"> Email:</label>
+<input type="email" name="email" id="email">
+<br><br>
+<label for="category">Support Category:</label>
+<select name"category" id="category">
+        <option value""></option>
+        <option value="questions">General Questions</option>
+        <option value="bug">Bug or Issues</option>
+	<option value="status">Order Status</option>
+	<option value="billing">Billing</option>
+        <option value="return">Return and Refund</option>
+        <option value="others">Others</option>
+</select>
+<br><br>
+<label for="subject">Subject:</label>
+<input type="text" name="subject" id="subject" maxlength="140">
+<br><br>
+<label for="description">Description:</label>
+<br>
+<textarea name="description" rows="6" cols="60" wrap="soft">
+Give a description of the ticket.
+</textarea>
+<br><br>
+<input type="submit" name="SubmitButton" value="Submit">  
+<input type="reset" name="ResetButton" value="Reset">
+</form>
+</section>
+<section>
+<p>
+We will contact you within 2 business days about the ticket you submitted. Thanks!
+</p>
+</section>
+</article>
+<footer>
+&copy;2016 Xinyu Zhao
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="new.html">What's New</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="order.html">Order</a></li>
+<li><a href="support.html">Support</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+<address>2711 N 1st St, San Jose, CA 95134</address>
+</footer>
+</body>
+</html>
