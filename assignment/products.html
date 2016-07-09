@@ -12,7 +12,7 @@
 img#logo { height: 64px; width: 51px }
 </style>
 </head>
-<body class="home">
+<body>
 <header>
 <h1><img id="logo" src="images/raspberry-pi-logo.png" alt="raspberry logo">
 <a id=top>PiGuard</a></h1>
@@ -21,19 +21,105 @@ img#logo { height: 64px; width: 51px }
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
 <li><a href="new.html">What's New</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="order.html">Order</a></li>
 <li><a href="support.html">Support</a></li>
 <li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-<article>
+<article id="index">
 <section>
-what's new
+<table>
+<caption>Products</caption>
+<tr class="color2">
+<th>Category</th>
+<th>Photo</th>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+<th>In Stock?</th>
+</tr>
+<th rowspan="3">Raspberry Pi</th>
+<tr class="color1">
+<td><img id="rpi" src="images/raspberrypi3.jpg" alt="Raspberry Pi 3 Model B"></td>
+<td>RASPBERRY PI 3 MODEL B</td>
+<td>
+<ul>
+<li>Next generation Quad Core Broadcom BCM2837 64-bit ARMv8 processor</li>
+<li>Processor speed increases from 900 MHz on the Pi 2 to up to 1.2GHz on the Pi 3</li>
+<li>New USB/Ethernet controller chip</li>
+<li>BCM43143 WiFi chip BUILT-IN</li>
+<li>Bluetooth Low Energy (BLE) on board</li>
+<li>Upgraded switched power source that goes up to 2.5 Amps instead of just 2 Amps</li>
+</ul>
+</td>
+<td>&#36;39.95</td>
+<td>Yes</td>
+</tr>
+<tr class="color2">
+<td><img id="rpi" src="images/raspberrypi.jpg" alt="Raspberry Pi 2 Model B+"></td>
+<td>RASPBERRY PI 2 MODEL B+</td>
+<td>
+<ul>
+<li>Dual step-down (buck) power supply for 3.3V and 1.8V</li>
+<li>5V supply has polarity protection, 2A fuse and hot-swap protection (so you can plug/unplug USB without resetting the board)</li>
+<li>New USB/Ethernet controller chip</li>
+<li>4 USB ports instead of 2 ports</li>
+<li>40 GPIO pins instead of 26. The top/first 26 pins match the original layout, 9 additional GPIO and 2 EEPROM Plate identification pins</li>
+<li>Composite (NTSC/PAL) video now integrated into 4-pole 3.5mm 'headphone' jack</li>
+<li>MicroSD card socket instead of full size SD</li>
+<li>Four mounting holes in rectangular layout</li>
+<li>Many connectors moved around</li>
+</ul>
+</td>
+<td>&#36;35.95</td>
+<td>Yes</td>
+</tr>
+<th rowspan="3">Accessories</th>
+<tr class="color1">
+<td><img id="rpi" src="images/cam.jpg" alt="Camera module for Raspberry Pi"></td>
+<td>Raspberry Pi Camera Board v2</td>
+<td>
+<ul>
+<li>8 megapixel native resolution high quality Sony IMX219 image sensor</li>
+<li>Cameras are capable of 3280 x 2464 pixel static images</li>
+<li>Capture video at 1080p30, 720p60 and 640x480p90 resolutions</li>
+<li>All software is supported within the latest version of Raspbian Operating System</li>
+<li>1.4 µm X 1.4 µm pixel with OmniBSI technology for high performance (high sensitivity, low crosstalk, low noise)</li>
+<li>Optical size of 1/4"</li>
+</ul>
+</td>
+<td>&#36;9.95</td>
+<td>Yes</td>
+</tr>
+<tr class="color2">
+<td><img id="rpi" src="images/pir.jpg" alt="PIR Motion Sensor"></td>
+<td>PIR Motion sensor</td>
+<td>
+<ul>
+<li>Detect motion from pets/humanoids from about 20 feet away</li>
+<li>An adjustable delay before firing (approx 2-4 seconds)</li>
+<li>Adjustable sensitivity</li>
+<li>Digital signal output is 3.3V high/low<li>
+<li> Sensing range is about 7 meters</li>
+</ul>
+</td>
+<td>&#36;9.95</td>
+<td>Yes</td>
+</tr>
+</table>
 </section>
 </article>
+<aside id="left-nav">
+<ul>
+<li><a href="products.html">Find a Product</a></li>
+<li><a href="order.html">Place an Order</a></li>
+<li><a href="support.html">Ask a Question</a></li>
+<li><a href="faq.html">Find an Answer</a></li>
+</ul>
+</aside>
 <footer>
 &copy;2016 Xinyu Zhao
 <ul>

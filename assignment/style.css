@@ -5,20 +5,31 @@ header {
   font-style:oblique;
   border-radius: 15px;
   margin: 0;
+  background-image: -moz-linear-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 30px);
+  background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
+  text-shadow: 1px 3px 4px #861323;
 }
 img#logo { height: 64px; width: 51px }
+img#rpi { height:73px; width:97px}
 h2 { color:white; text-align:left }
 section h2 { color:white; text-align:center }
-.home { background-color:#8BDD98; font-size:1em; font-style:normal; font-family:Arial; font-weight:300; text-align:left }
+#home-bg { 
+  background:url(images/home.jpg) no-repeat;
+  background-size:cover;
+  text-shadow:1px 1px 2px #999;
+  color:white;
+}
+
+body {background-color:#8BDD98; font-size:1em; font-style:normal; font-family:Arial; font-weight:300; text-align:left;}
 nav ul li {
   list-style-type:none;
   display: inline;
   padding: 8px 0 8px 0;
 }
 footer ul li {
-list-style-type:none;
-display: inline;
-padding: 8px 0 8px 0;
+  list-style-type:none;
+  display: inline;
+  padding: 8px 0 8px 0;
 }
 aside ul {
   list-style-type: none;
@@ -29,28 +40,94 @@ aside ul li a {
   display: block;
   padding: 8px 0 8px 8px;
 }
-article#index-article {
+article#index {
   float:right;
-  width:90%;
-  padding: 0 10px;
+  width:85%;
+  padding: 0 10px 0 10px;
+  margin: 0 20px
+}
+article#order {
+  float:left;
+  width:80%;
+  padding: 0 0 0 10px;
 }
 article {
   padding: 0 10px 0 10px;
+  margin: 20px 0 20px 0;
 }
 figure {text-align: center }
-aside {
+aside#left-nav {
   position:fixed;
   float:left;
-  width:8%;
+  width:10%;
 }
 .about { background-color:gray; color:white; font-size:1em; font-family:Arial; text-align:right }
-li a:hover {background-color:gray; color:white }
-a:link { background-color:black; color:#E3234F; text-decoration: none }
+nav * a {
+  padding: 5px 8px 5px 8px;
+  margin: 0;
+  border-radius: 3px;
+}
+li a:hover {
+  background-color:gray;
+  color:white;
+  box-shadow: 2px 5px 5px 0 #2E8681; 
+  background-image: -moz-linear-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 30px);
+  background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
+}
+a:link { background-color:black; color:#0CCCCC; text-decoration: none;}
 a:visited {color:#0CCCCC }
 #feature { text-align:center }
 footer { clear: both; text-align:center; font-size:0.8em }
+
 nav {
   text-align:right;
   padding: 0 10px;
 }
+
 dt {color:white; font-weight:bold; font-size:1.2em}
+
+table {
+  border: 5px double;
+  width: 90%;
+  border-spacing: 5px;
+  border-color: #8BDD98;
+  background-color: gray;
+  color: white;
+}
+td {
+  border: 2px solid;
+  padding: 5px
+}
+th {
+  border: 2px solid;
+}
+tr.color1 {
+  background-color: lightgray;
+}
+tr.color2 {
+  background-color: #44BBB4;
+}
+caption {
+  font-family: arial, verdana;
+  font-weight: bold;
+  font-size: 1.2em;
+  color:white;
+  margin: 20px;
+}
+fieldset {
+  width: 60%
+}
+
+hr{
+  border:0;
+}
+hr.blue {
+  background-color: #0CCCCC;
+  color: #0CCCCC;
+  height: 12px;
+}
+hr.red {
+  background-color: #E3234F;
+  color: #E3234F;
+  height: 12px;
+}

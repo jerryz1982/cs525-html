@@ -9,7 +9,7 @@
 <title>PiGuard - Customer Support</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="home">
+<body>
 <header>
 <h1><img id="logo" src="images/raspberry-pi-logo.png" alt="raspberry logo">
 <a id=top>PiGuard</a></h1>
@@ -18,25 +18,25 @@
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
 <li><a href="new.html">What's New</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="order.html">Order</a></li>
 <li><a href="support.html">Support</a></li>
 <li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-<article>
+<article id="index">
 <section>
-<h2>Submit a Ticket</h2>
+<h2 style="text-align:left">Submit a Ticket</h2>
 <form name="ticket" action="http://itu.lewebcafe.com/csc525/form.php" method="post" enctype="application/x-www-form-urlencoded">
 <label for="first_name">First Name:</label>
-<input type="text" name="first_name" id="first_name" maxlength="30">
+<input type="text" name="first_name" id="first_name" maxlength="30" placeholder="First Name">
 <label for="last_name">Last Name:</label>
-<input type="text" name="last_name" id="last_name" maxlength="30">
+<input type="text" name="last_name" id="last_name" maxlength="30" placeholder="Last Name">
 <br><br>
 <label for="email"> Email:</label>
-<input type="email" name="email" id="email">
+<input type="email" name="email" id="email" placeholder="abc@example.com">
 <br><br>
 <label for="category">Support Category:</label>
 <select name"category" id="category">
@@ -54,8 +54,7 @@
 <br><br>
 <label for="description">Description:</label>
 <br>
-<textarea name="description" rows="6" cols="60" wrap="soft">
-Give a description of the ticket.
+<textarea name="description" rows="6" cols="60" wrap="soft" placeholder="Give a description of the ticket.">
 </textarea>
 <br><br>
 <input type="submit" name="SubmitButton" value="Submit">  
@@ -68,6 +67,14 @@ We will contact you within 2 business days about the ticket you submitted. Thank
 </p>
 </section>
 </article>
+<aside id="left-nav">
+<ul>
+<li><a href="products.html">Find a Product</a></li>
+<li><a href="order.html">Place an Order</a></li>
+<li><a href="support.html">Ask a Question</a></li>
+<li><a href="faq.html">Find an Answer</a></li>
+</ul>
+</aside>
 <footer>
 &copy;2016 Xinyu Zhao
 <ul>

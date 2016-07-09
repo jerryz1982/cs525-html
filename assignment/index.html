@@ -21,20 +21,17 @@ img#logo { height: 64px; width: 51px }
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
 <li><a href="new.html">What's New</a></li>
 <li><a href="products.html">Products</a></li>
 <li><a href="order.html">Order</a></li>
 <li><a href="support.html">Support</a></li>
 <li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-<article id="index-article">
-<section>
+<article id="index">
+<section id="home-bg">
 <p><strong>PiGuard</strong>&#8482; is a home security system using <em>Raspberry Pi</em> with a central management console, which can be hosted in the <strong>cloud</strong> or deployed at your home locally.</p>
-<hr width=100% size="12" noshade color="#0CCCC">
-</section>
-<section>
 <h2><a id="intro">Introduction</a></h2>
 <blockquote><strong>Home is where the heart is.</strong><br>
 <blockquote>by Gaius Plinius Secundas - Pliny the Elder</blockquote></blockquote>
@@ -46,7 +43,9 @@ catch the images of the bad guy. It will give you immediate alerts through Email
 messages such as twitter or facebook. You can take appropiate actions for the event by a click on the console,
 which you can visit at home or everywhere else in the world as long as internet is available.
 </p>
-<hr width=100% size="12" noshade color="#0CCCC">
+<hr class="blue">
+</section>
+<section>
 <h2><a id="architecture">Architecture</a></h2>
 <figure>
 <img src="images/architecture.jpg" alt="architecture">
@@ -55,7 +54,7 @@ which you can visit at home or everywhere else in the world as long as internet 
 <p>PiGuard&#8482; includes a swarm of Raspberry Pi-s as agents to collect data from infrared and door switch sensors and report security events
 to RabbitMQ message broker. The central management control console, which employs MEAN(<dfn>MongoDB, Express, AngularJS, NodeJs</dfn>)
 stack, can display and let user handle the reported events with a couple of clicks.</p>
-<hr width=100% size="12" noshade color="#0CCCC">
+<hr class="blue">
 </section>
 <section id='feature'>
 <h2><a id="features">Features</a></h2>
@@ -66,10 +65,10 @@ stack, can display and let user handle the reported events with a couple of clic
 <p>Push Notification</p>
 <p>Sound Alarm</p>
 <a href="#top">Go to Top</a>
-<hr width=100% size="12" noshade color="#0CCCC">
+<hr class="blue">
 </section>
 </article>
-<aside>
+<aside id="left-nav">
 <ul>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#architecture">Architecture</a></li>
