@@ -1,0 +1,35 @@
+#parentbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  background: #ccf;
+  margin: 0;
+  padding: 0
+}
+
+article {
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  flex-grow: 1;
+  background: #eec;
+  padding: 5px;
+  margin: 10px;
+}
+
+article:first-child {
+  background: #D5384E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab17 - Print/Mobile</title>
+<meta charset="utf-8">
+<meta name=" viewport" content=" width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+  p { color: white;
+      background-color: brown;}
+
+@media print {
+  p {  color: black;
+       background: white;
+    }
+
+  a:after { content:" (" attr(href) ") " }
+};
+
+/* 320px and up
+-- It's for the iPhone, iPod touch and other Adroid
+-- and mobile phones in portrait mode */
+@media only screen and (min-width: 320px) {
+  p {
+     color: #DFCBCE;
+     font-size: 20pt;
+     background: #E03049;
+    }
+}
+
+/* 480px and up
+-- It's for larger mobile phones such as HTC models
+-- and iPhone in landscapemode */
+@media only screen and (min-width: 480px) {
+  p {
+     color: #CBDFD5;
+     font-size: 24pt;
+     background: #0D5F33;
+    }
+}
+
+/* From 600px-767px, not beyond
+-- It's for resizing a desktop browser */
+@media only screen and (min-width: 600px)
+{
+  p {
+     color: brown;
+     font-size: 28pt;
+     background: #F6DBD5;
+    }
+}
+
+/* 768px and up
+-- This is for desktops, iPads and other tablets */
+@media only screen and (min-width: 768px) {
+  p {
+     color: grey;
+     font-size: 32pt;
+     background: #32B6B6;
+    }
+}
+
+</style>
+</head>
+<body>
+  <article>
+    <p>One of the ways suggested by the Wi-Fi Alliance to protect yourself from Evil Twin access points is to use a <a href="http://compnetworking.about.com/od/vpn/g/bldef_vpn.htm">Virtual Private Network (VPN)</a>. Using the encrypted tunnel provided by the VPN encryption process helps to secure all traffic between your VPN-capable device and the VPN server.
+    </p>
+    <p>Virtual Private Networks (VPNs)used to be a luxury that only large corporations could afford to provide their employees, but now personal VPN services are plentiful and cheap, starting at around $5 a month. Check out our article on Personal VPNs for help selecting a personal VPN service.
+    </p>
+    <p>Other than avoiding open public hotspots, you can help reduce the eavesdropping risk associated with Evil Twin hotspots by only logging into your e-mail and other sites via <a href="http://webdesign.about.com/od/ecommerce/a/aa070407.htm">HTTPS</a> secured pages instead of using HTTP unencrypted. Sites such as Facebook, Gmail, and others feature HTTPS login options.
+    </p>
+  </article>
+</body>
+</html>

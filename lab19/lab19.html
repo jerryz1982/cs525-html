@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lab19 - Transform&Animation</title>
+<meta charset="utf-8">
+<style type="text/css">
+dt {
+  font-weight: bold;
+  padding: 10px;
+}
+#right-title {
+  float:right;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+}
+
+#left-title {
+  float:left;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: top right;
+}
+img.width1 { width:25%;}
+article { margin: 3em auto; }
+
+
+@keyframes moving {
+  0% {
+    left: 30%;
+    top: 0;
+  }
+ 
+  100% {
+    left: 60%;
+    top: 0;
+  }
+}
+
+.moving_chopsticks {
+  animation: moving 2s ease-in-out .5s infinite alternate;
+  width: 10%;
+  position: absolute;
+}
+
+#container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+section {
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  margin: 20px 20px 20px 0px;
+}
+</style>
+</head>
+<body>
+<div>
+<img class="moving_chopsticks" src="images/chopsticks.png">
+</div>
+<header>
+  <h2 id="left-title">Grocery sushi sucks</h2>
+  <img class="width1" src="images/grocery.jpg" alt="grocery sushi">
+  <img class="width1" src="images/logo.png" alt="serious sushi">
+  <h2 id="right-title">How to Order Sushi</h2>
+</header>
+
+<article>
+<div id="container">
+<section>
+<dl>
+<dt>The Rice</dt>
+<dd>
+<ul>
+<li>It's too mushy... or too dry</li>
+<li>The temperature is wrong</li>
+<li>The flavor of the rice is off</li>
+<li>The rice loses its integrity</li>
+<li>The rice isn't packed right</li>
+</ul>
+</dd>
+<dt>The Fish</dt>
+<dd>
+<ul>
+<li>Raw fish loses flavor when chilled</li>
+<li>The fish is coming from bigger suppliers</li>
+<li>The freezing technology is different</li>
+<li>Seasonality isn't taken into account</li>
+<li>You're more likely to be eating bogus fish</li>
+<li>Grocery store sushi is oxidized</li>
+<li>They're not starting from the whole fish</li>
+</ul>
+</dd>
+<dt>Everything Else</dt>
+<dd>
+<ul>
+<li>The seaweed is just missing the point</li>
+<li>Most sushi chefs don't want to hide behind mayo</li>
+<li>The ginger is mass produced</li>
+<li>The wasabi isn't fresh (and might not even be wasabi)</li>
+<li>The soy sauce isn't custom</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section>
+<dl>
+<dt>Sushi and sashimi are not the same dish</dt>
+<dd>It's common for customers to mistake sashimi for sushi. "No rice means it's not sushi," Elliot and Cook noted. "The word sushi refers to vinegared rice, not fish, like most people assume. Whereas sashimi is just fish, no rice." And while some picky eaters may be turned off by the idea of "raw fish," Elliot and Cook reminded us that "sushi and sashimi can be made from pretty much anything: fish, seafood, meats, poultry, and vegetables." And it isn't a requirement that the item be raw — pickling or steaming are common practices.
+</dd>
+<dt>Don't order it all at once</dt>
+<dd>Don't take a "we'll have one of everything" approach. Take your time when ordering sushi and sashimi. "When ordering, it's best to order little by little," Elliot and Cook write. "Your sashimi or sushi will come out faster and will stay at proper temperature and not dry out."
+</dd>
+<dt>And there is an order you should follow</dt>
+<dd>"It's often best to start with a light plate of sashimi to warm up the palate," note Elliot and Cook. The key to enjoying your sushi the most is ordering from light to heavy or lean to fatty. They recommend starting with whitefish, then moving onto yellowtails to tunas to "silver skin" fish, like mackerel. End your meal with sweet items like eel and tamago, or eggs.
+</dd>
+<dt>And listen to the chef</dt>
+<dd>Relax and let the chef decide which dishes to serve, which is called omakase in Japanese. This way, “the chef will present their best choices in the order they feel they should be eaten,” add Elliot and Cook. But don’t be afraid to let the chef know if there’s anything you can’t have or don’t particularly want: they won’t be offended.
+</dd>
+<dt>Don't douse it in soy sauce</dt>
+<dd>While soy sauce adds a nice salty flavor, too much will make the rice fall apart. If you've ordered nigiri — a slice of raw fish over vinegared rice — Elliot and Cook recommend turning it over and dipping just the fish. Or if you’ve ordered a roll, just dab the nori or seaweed in the soy sauce.
+</dd>
+<dt>Use the wasabi and pickled ginger with care</dt>
+<dd>Don't mix the wasabi with the soy sauce. Not only will it dilute the flavor of the wasabi, but the chef has most likely added wasabi to your sushi, if he or she feels it benefits the flavor. Elliot and Cook advise adding the wasabi directly to your roll or piece of nigiri. Suzuki of Sushi Seki also added that the pickled ginger shouldn’t be eaten with your sushi — it's a palate cleanser!
+</dd>
+</dl>
+</section>
+</div>
+  </article>
+</body>
+</html>
